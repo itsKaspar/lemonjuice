@@ -2,7 +2,7 @@
 
 # dependencies graphicsmagick-imagemagick-compat, autotrace
 
-import argparse, os, random, re 
+import argparse, os, random, re, shutil
 
 print ("vectory.py v1.0 last update 19.03.2020")
 print ("\\\\ Animated SVG glitch 4 videoz")
@@ -117,4 +117,5 @@ os.system("ffmpeg \
 
 os.system("ffmpeg -i " + final_name + " test" + str(size) + ".png")
 
+shutil.rmtree(temp_dir) 
 print("> done")
