@@ -103,7 +103,7 @@ for file in os.listdir(temp_sub_gsvg):
 #overlaying with old video
 print("> reconstructing video file")
 
-final_name = filein[:4] + "-s-" + str(size) + ".mp4"
+final_name = filein[:-4] + "-s-" + str(size) + ".mp4"
 
 os.system("ffmpeg \
 	-i " + temp_sub_frames + "/%06d.png \
